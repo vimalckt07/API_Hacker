@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:NewsAPI.Controllers.StoriesController.Get">
+            <summary>
+            Gets the newest stories from Hacker News.
+            </summary>
+            <returns>A list of the newest stories.</returns>
+        </member>
+        <member name="M:NewsAPI.ExceptionHandling.ExceptionMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Middleware to handle exceptions in the request pipeline.
+            </summary>
+            <param name="httpContext">The current HTTP context.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:NewsAPI.ExceptionHandling.ExceptionMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)" -->
+        <member name="T:NewsAPI.Services.IHackerNewsService">
+            <summary>
+            Service to fetch the newest stories from Hacker News API.
+            </summary>
+        </member>
+        <member name="T:NewsAPI.Services.HackerNewsService">
+            <summary>
+            Initializes a new instance of the HackerNewsService.
+            </summary>
+            <param name="cache">The memory cache.</param>
+            <param name="httpClient">The HTTP client.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:NewsAPI.Services.HackerNewsService.GetNewestStoriesAsync">
+            <summary>
+            Fetches the newest stories from the Hacker News.
+            </summary>
+            <returns>A list of the newest stories are.</returns>        
+        </member>
+        <member name="M:NewsAPI.Services.HackerNewsService.GetStoryAsync(System.Int32)">
+            <summary>
+            Fetches a story by its ID from Hacker News.
+            </summary>
+            <param name="id">The story ID.</param>
+            <returns>The story, or null if an error occurred.</returns>
+        </member>
+    </members>
+</doc>
